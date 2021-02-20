@@ -15,12 +15,12 @@
 #include <bsp.h>
 #include <sysctl.h>
 
-int core1_function(void *ctx)
-{
-    uint64_t core = current_coreid();
-    printf("Core %ld Hello world\n", core);
-    while(1);
-}
+ int core1_function(void *ctx)	
+{	
+    uint64_t core = current_coreid();	
+    printf("Core %ld Hello world\n", core);	
+    while(1);	
+}	
 
 int main(void)
 {

@@ -12,24 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+#include "stdio.h"
+#include "sysctl.h"
+#include "uarths.h"
 
-#ifndef _BSP_SLEEP_H
-#define _BSP_SLEEP_H
-
-#include "clint.h"
-#include "encoding.h"
-#include "syscalls.h"
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-int usleep(uint64_t usec);
-int msleep(uint64_t msec);
-unsigned int sleep(unsigned int seconds);
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif /* _BSP_SLEEP_H */
